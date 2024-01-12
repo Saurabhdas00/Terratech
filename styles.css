@@ -99,17 +99,24 @@ input[type="checkbox"]{
   }
 }
 .content{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: -1;
-  width: 100%;
-  padding: 0 30px;
-  color: #1b1b1b;
+  display: flex;
+  justify-content: center;
+  align-self: center;
 }
-.content div{
-  font-size: 40px;
-  font-weight: 700;
+footer{
+  background-color: rgba(0, 0, 0, 0.171);
+}
+.footercontent{
+  width:100%;
+  padding: 70px 30px 20px;
+  margin-top:100px;
+}
+.socialogos{
+  display: flex;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px; 
+  width: 30px;
+  height: 30px;
 }
