@@ -99,7 +99,7 @@ input[type="checkbox"]{
   }
 }
 .mission-vision {
-  background-color: #f0f0f0; /* Set your desired background color */
+  background-color: #cde6c4; /* Set your desired background color */
   padding: 20px;
   text-align: center;
   display: flex;
@@ -158,10 +158,10 @@ input[type="checkbox"]{
   margin-top: 20px;
 }
 
-.swiper-slide {
+/* .swiper-slide {
   background-size: cover;
   background-position: center;
-}
+} */
 footer {
   background: #1b1b1b;
     background: #1b1b1b;
@@ -174,37 +174,37 @@ footer {
 }
 
   /* Basic styling for the carousel container */
-    .image-carousel {
-     width: 70%;
-            margin: auto;
-            overflow: hidden;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
+  .image-carousel {
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+ }
 
-        /* Styling for the individual images */
-        .swiper-slide{
-            width: 100%;
-            display: none;
-        }
+    /* Styling for the individual images */
+ .swiper-slide{
+  width: 100%;
+ display: none;
+ }
 
-        /* Styling for the navigation buttons */
-        .swiper-button-prev, .swiper-button-next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            margin-top: -22px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
+  /* Styling for the navigation buttons */
+  .swiper-button-prev, .swiper-button-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  }
 
-    .swiper-button-next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-    }
+  .swiper-button-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}

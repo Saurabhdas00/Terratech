@@ -37,29 +37,22 @@ var swiper = new Swiper('.swiper-container', {
         clickable: true,
     },
 });
-let slideIndex = 1;
-showSlides(slideIndex);
+document.addEventListener('DOMContentLoaded', function () {
+    var mySwiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
 
-function changeSlide(n) {
-    showSlides(slideIndex += n);
-}
+        // If you need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
 
-function showSlides(n) {
-    let i;
-    const slides = document.querySelectorAll('.swiper-slide');
-
-    if (n > slides.length) {
-        slideIndex = 1;
-    }
-    if (n < 1) {
-        slideIndex = slides.length;
-    }
-
-    // Hide all images
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none';
-    }
-
-    // Display the current image
-    slides[slideIndex - 1].style.display = 'block';
-}
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+});
