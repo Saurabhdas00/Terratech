@@ -21,29 +21,58 @@
             <li><a class="active" href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
-            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Downloads</a></li>
             <li><a href="#">Feedback</a></li>
          </ul>
       </nav>
-      <div class="content">
-        WELCOME TO TERRATECH
-      </div>
-      <footer>
-        <div class="footercontent">
-            <div class="socialogos">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram-square"></i></a>
-                <a href="#"><i class="fab fa-twitter-square"></i></a>
+      <section class="mission-vision">
+        <div class="mission-vision-content">
+            <div class="mission-image">
+                <img src="download3.jpeg" alt="Mission Image">
             </div>
-            <div class="footeritems">
-                <h2>Quick Links</h2>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                </ul>
+            <div class="mission-text">
+                <h2>Mission</h2>
+                <p>Innovating the future, our vision is to seamlessly integrate cutting-edge technology with sustainable practices. We aspire to create a world where every individual's potential is unlocked, fostering global collaboration and environmental harmony. Embracing diversity, we envision a society empowered by knowledge, compassion, and shared prosperity</p>
+                <button onclick="redirectToSomewhere()">Click me!</button>
             </div>
         </div>
-      </footer>
+        <div class="mission-vision-content" id="vision-section">
+            <h2>Vision</h2>
+            <p>Innovating the future, our vision is to seamlessly integrate cutting-edge technology with sustainable practices. We aspire to create a world where every individual's potential is unlocked, fostering global collaboration and environmental harmony. Embracing diversity, we envision a society empowered by knowledge, compassion, and shared prosperity</p>
+        </div>
+    </section>
+    <section class="cards-section">
+        <div class="card">
+            <img src="download3.jpeg" alt="Card Image 1">
+            <button class="view-button">View</button>
+        </div>
+        <div class="card">
+            <img src="download3.jpeg" alt="Card Image 2">
+            <button class="view-button">View</button>
+        </div>
+        <div class="card">
+            <img src="download3.jpeg" alt="Card Image 3">
+            <button class="view-button">View</button>
+        </div>
+    </section>
+    <section class="image-carousel">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url('download1.jpeg')"></div>
+                <div class="swiper-slide" style="background-image:url('download3.jpeg')"></div>
+                <div class="swiper-slide" style="background-image:url('download.jpeg')"></div>
+                <!-- Add more slides as needed -->
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+      <footer>
+        <p>&copy; 2024 Terratech. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
