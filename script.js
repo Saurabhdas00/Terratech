@@ -37,3 +37,29 @@ var swiper = new Swiper('.swiper-container', {
         clickable: true,
     },
 });
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function changeSlide(n) {
+    showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+    let i;
+    const slides = document.querySelectorAll('.swiper-slide');
+
+    if (n > slides.length) {
+        slideIndex = 1;
+    }
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+
+    // Hide all images
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+
+    // Display the current image
+    slides[slideIndex - 1].style.display = 'block';
+}
