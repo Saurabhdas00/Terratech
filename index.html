@@ -25,10 +25,10 @@
          </label>
          <ul>
             <li><a class="active" href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="aboutus.html">About</a></li>
             <li><a href="#">Services</a></li>
-            <li><a href="#">Downloads</a></li>
-            <li><a href="#">Feedback</a></li>
+            <li><a href="download.html">Downloads</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
          </ul>
       </nav>
       <section class="mission-vision">
@@ -39,7 +39,9 @@
             <div class="mission-text">
                 <h2>Mission</h2>
                 <p>Innovating the future, our vision is to seamlessly integrate cutting-edge technology with sustainable practices. We aspire to create a world where every individual's potential is unlocked, fostering global collaboration and environmental harmony. Embracing diversity, we envision a society empowered by knowledge, compassion, and shared prosperity</p>
-                <button onclick="redirectToSomewhere()">Click me!</button>
+                <button onclick="handleButtonClick()" id="clickMeButton">Click me!</button>
+            </div>
+        </div>
             </div>
         </div>
         <div class="mission-vision-content" id="vision-section">
@@ -50,33 +52,29 @@
     <section class="cards-section">
         <div class="card">
             <img src="download3.jpeg" alt="Card Image 1">
-            <button class="view-button">View</button>
+            <button class="view-button"  onclick="redirectToSomewhere()">View</button>
         </div>
         <div class="card">
             <img src="download3.jpeg" alt="Card Image 2">
-            <button class="view-button">View</button>
+            <button class="view-button" onclick="redirectToSomewhere()">View</button>
         </div>
         <div class="card">
             <img src="download3.jpeg" alt="Card Image 3">
-            <button class="view-button">View</button>
+            <button class="view-button"  onclick="redirectToSomewhere()">View</button>
         </div>
     </section>
-    <section class="image-carousel">
-        <div class="swiper-container">
-          
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image:url('download1.jpeg')"></div>
-                <div class="swiper-slide" style="background-image:url('download3.jpeg')"></div>
-                <div class="swiper-slide" style="background-image:url('download1.jpeg')"></div>
-                <!-- Add more slides as needed -->
-            </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- Add Navigation -->
-            <div class="swiper-button-next" onclick="changeSlide(-1)"></div>
-             <div class="swiper-button-prev"onclick="changeSlide(1)"></div>
+    <section class="photo-collage">
+        <div class="photo">
+            <img src="photo1.jpg" alt="Photo 1">
+        </div>
+        <div class="photo">
+            <img src="photo2.jpg" alt="Photo 2">
+        </div>
+        <div class="photo">
+            <img src="photo3.jpg" alt="Photo 3">
         </div>
     </section>
+    
       <footer>
         <p>&copy; 2024 Terratech. All rights reserved.</p>
     </footer>

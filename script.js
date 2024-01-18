@@ -1,6 +1,13 @@
+// Add this script to handle smooth scrolling when clicking on navigation links
 function redirectToSomewhere(){
-    window.location.href = "https://abes365-my.sharepoint.com/:u:/g/personal/gagan_22b0231040_abes_ac_in/EWW-Uk1nAc1Lj5-ve4tT4LoBurtOPPm613L80Sl4cN4IRw?e=dNgfLZ";
-}
+    window.location.href = "https://app.powerbi.com/groups/me/reports/e79ad090-c24a-45ea-b612-9297c336fda5?pbi_source=desktop"}
+function redirectToSomewhere(){
+        window.location.href = "https://app.powerbi.com/groups/me/reports/e79ad090-c24a-45ea-b612-9297c336fda5?pbi_source=desktop"}
+function redirectToSomewhere(){
+            window.location.href = "https://app.powerbi.com/groups/me/reports/e79ad090-c24a-45ea-b612-9297c336fda5?pbi_source=desktop"}
+function redirectToSomewhere(){
+                window.location.href = "https://app.powerbi.com/groups/me/reports/e79ad090-c24a-45ea-b612-9297c336fda5?pbi_source=desktop"}
+
 document.addEventListener('DOMContentLoaded', function () {
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
@@ -15,6 +22,12 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
 });
+function handleButtonClick() {
+    var clickMeButton = document.getElementById("clickMeButton");
+    clickMeButton.classList.toggle("clicked");
+    redirectToSomewhere(); // Call your existing function logic
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     const menuBtn = document.getElementById('click');
     const menuIcon = document.querySelector('.menu-btn i');
