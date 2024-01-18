@@ -139,12 +139,48 @@
             margin-bottom: 20px;
         }
 
-        .grey-column {
+        .grey-column, .white-column {
             background-color: #ddd; /* Grey background */
         }
 
-        .white-column {
-            background-color: #fff; /* White background */
+        /* Download and Upload Section Styles */
+        .download-button, .upload-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            background: #000;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        /* Upload Section Styles */
+        .upload-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .upload-input {
+            display: none; /* Hide the file input initially */
+        }
+
+        .upload-message {
+            text-align: center;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        /* Style for the selected file */
+        .selected-file {
+            color: #000;
+            font-weight: bold;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -157,10 +193,10 @@
             <i class="fas fa-bars"></i>
         </label>
         <ul>
-            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="aboutus.html">About</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="download.html">Downloads</a></li>
+            <li><a href="download.html" class="active">Downloads</a></li>
             <li><a href="feedback.html">Feedback</a></li>
         </ul>
     </nav>
@@ -169,15 +205,39 @@
     <div class="columns">
         <div class="column grey-column">
             <h2>Download Section</h2>
-            <!-- Placeholder for Download Content -->
-            <p>Download your files here.</p>
+            <a href="file1.xlsx" class="download-button">Download 1</a>
+            <a href="file2.xlsx" class="download-button">Download 2</a>
+            <a href="file3.xlsx" class="download-button">Download 3</a>
+            <a href="file4.xlsx" class="download-button">Download 4</a>
+            <a href="file5.xlsx" class="download-button">Download 5</a>
+            <a href="file6.xlsx" class="download-button">Download 6</a>
         </div>
-        <div class="column white-column">
+        <div class="column white-column upload-section">
             <h2>Upload Section</h2>
-            <!-- Placeholder for Upload Content -->
-            <p>Upload your images here.</p>
+            <label for="fileInput" class="upload-button" onclick="document.getElementById('fileInput').click()">Upload File</label>
+            <input type="file" id="fileInput" class="upload-input" onchange="displaySelectedFile(this)">
+            <p class="upload-message" id="selectedFileMessage">Click 'Upload File' to select a file</p>
+            <p class="selected-file" id="selectedFile"></p>
         </div>
     </div>
 
+    <script>
+        function displaySelectedFile(input) {
+            var selectedFileMessage = document.getElementById('selectedFileMessage');
+            var selectedFile = document.getElementById('selectedFile');
+
+            if (input.files.length > 0) {
+                selectedFileMessage.style.display = 'none';
+                selectedFile.style.display = 'block';
+                selectedFile.textContent = 'Selected File: ' + input.files[0].name;
+            } else {
+                selectedFileMessage.style.display = 'block';
+                selectedFile.style.display = 'none';
+            }
+        }
+    </script>
+
 </body>
+<script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/c340d7a7-7de7-46cc-8a5c-a5c1818491e1/webchat/config.js" defer></script>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terratech</title>
-    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="feedback.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="icon" href="download.jpeg" type="image/x-icon">
     <!-- Add this line to include Swiper CSS -->
@@ -23,11 +23,11 @@
          <i class="fas fa-bars"></i>
          </label>
          <ul>
-            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="aboutus.html">About</a></li>
-            <li><a href="service.html">Services</a></li>
+            <li><a href="services.html">Services</a></li>
             <li><a href="download.html">Downloads</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="feedback.html" class="active" >Feedback</a></li>
          </ul>
     </nav>
     <form action="/cwhphp/connect.php" method="post">
@@ -36,11 +36,12 @@
 
         <label for="phone">Phone Number:</label>
         <input type="tel" id="phone" name="phone" required>
-
         <label for="suggestion">Suggestions:</label>
         <textarea id="suggestion" name="suggestion" required></textarea>
 
         <button type="submit">Submit Feedback</button>
     </form>
 </body>
+<script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/c340d7a7-7de7-46cc-8a5c-a5c1818491e1/webchat/config.js" defer></script>
 </html>
