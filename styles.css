@@ -197,16 +197,17 @@ input[type="checkbox"]{
   height: 200px;
   object-fit: cover;
 }
-
+.bi{
+  display:flex;
+  justify-content: center;
+}
 footer {
   background: #1b1b1b;
   background: #1b1b1b;
-  z-index: 1; /* Add a higher z-index value to keep the footer above other elements */
+  z-index: 3; /* Add a higher z-index value to keep the footer above other elements */
   text-align: center;
   padding: 10px;
   position: fixed;
   bottom: 0;
   width: 100%;
 }
-
-  

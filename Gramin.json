@@ -1,0 +1,325 @@
+{
+	"info": {
+		"_postman_id": "db08c8ac-30bd-4fc4-b955-b29c3377872d",
+		"name": "Gramin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30353709"
+	},
+	"item": [
+		{
+			"name": "downloadCropList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host}}/crop/downloadCropList",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"crop",
+						"downloadCropList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "downloadCropMain",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host}}/crop/downloadCropMain",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"crop",
+						"downloadCropMain"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "downloadCropPincode",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host}}/crop/downloadCropPincode",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"crop",
+						"downloadCropPincode"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "downloadCropPincodeList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host}}/crop/downloadCropPincodeList",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"crop",
+						"downloadCropPincodeList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "downloadCropDSITandODOPs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host}}/crop/downloadCropDSITandODOPs",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"crop",
+						"downloadCropDSITandODOPs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "downloadPivot",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host}}/crop/downloadCropDSITandODOPs",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"crop",
+						"downloadCropDSITandODOPs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCropMain",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"filter\": {},\r\n    \"type\": \"xml\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}/crop/getCropMain",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"crop",
+						"getCropMain"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCropDSITandODOP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"filter\": {},\r\n    \"type\": \"xml\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}/crop/getCropDSITandODOP",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"crop",
+						"getCropDSITandODOP"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCropList",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"filter\": {},\r\n    \"type\": \"xml\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}/crop/getCropList",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"crop",
+						"getCropList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCropPincodeList",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"filter\": {},\n    \"type\": \"xml\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}/crop/getCropPincodeList",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"crop",
+						"getCropPincodeList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCropPincode",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"filter\": {},\r\n    \"type\": \"xml\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}/crop/getCropPincode",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"crop",
+						"getCropPincode"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPivot",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"filter\": {},\n    \"type\": \"json\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}/crop/getPivot",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"crop",
+						"getPivot"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "35.244.14.205/gramin",
+			"type": "default"
+		},
+		{
+			"key": "host",
+			"value": "localhost:5050",
+			"type": "default",
+			"disabled": true
+		}
+	]
+}

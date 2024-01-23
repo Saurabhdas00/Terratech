@@ -9,6 +9,9 @@
     <link rel="icon" href="download.jpeg" type="image/x-icon">
     <!-- Add this line to include Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
@@ -202,7 +205,7 @@
             <img src="datav.jpeg" alt="Card Image 1">
             <div class="card-content">
                 <div class="card-title">Data visualization</div>
-                <a href="#" class="know-more-btn">Know More</a>
+                <a href="https://app.powerbi.com/groups/me/reports/e4da165f-063c-4f3b-aa84-f909128895d5/ReportSection47312072a130fb4111f2?experience=power-bi" class="know-more-btn">Know More</a>
             </div>
         </div>
 
@@ -222,8 +225,22 @@
             </div>
         </div>
     </div>
-
+    <div id="map" style="height: 400px;"></div>
 </body>
 <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
 <script src="https://mediafiles.botpress.cloud/c340d7a7-7de7-46cc-8a5c-a5c1818491e1/webchat/config.js" defer></script>
+<script>
+    fetch("Gramin.json")
+    .then(response=>response.json())
+    .then(data=> showInfo(data));
+    function showInfo(data){
+        console.table(data)
+    }
+    var map = L.map('map').setView([20.5937, 78.9629], 5);
+
+// Use a more detailed tile layer for India
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+}).addTo(map);
+</script>
 </html>
