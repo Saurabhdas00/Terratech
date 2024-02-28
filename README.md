@@ -2,7 +2,8 @@
 
 Welcome to our Data Analytics Website repository! This project aims to provide a user-friendly interface for data analytics powered by Power BI.
 
-![Project Logo](path/to/project_logo.png)
+![image](https://github.com/Saurabhdas00/Terratech/assets/118757299/71e3b102-3c3a-4b58-b603-0e68b957086f)
+
 
 ## Table of Contents
 - [Features](#features)
