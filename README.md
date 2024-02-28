@@ -31,14 +31,15 @@ Welcome to our Data Analytics Website repository! This project aims to provide a
 1. Clone this repository to your local machine.
    ```bash
    git clone https://github.com/your-username/data-analytics-website.git
+## Content
 | File/Folder         | Description                                   |
 |---------------------|-----------------------------------------------|
 | data-analytics-website/ | Root directory                               |
-| ├── static/          | Static assets directory                      |
-| │   ├── css/         | Directory for CSS files                      |
-| │   ├── js/          | Directory for JavaScript files               |
-| │   └── img/         | Directory for image files                    |
-| ├── templates/       | HTML templates directory                     |
+| ├── static          | Static assets directory                      |
+| │   ├── css        | Directory for CSS files                      |
+| │   ├── js        | Directory for JavaScript files               |
+| │   └── img         | Directory for image files                    |
+| ├── templates       | HTML templates directory                     |
 | │   ├── index.html   | Main landing page                            |
 | │   └── dashboard.html | Power BI dashboard integration             |
 | ├── app.py           | Flask application file                       |
