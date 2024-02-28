@@ -45,3 +45,4 @@ Welcome to our Data Analytics Website repository! This project aims to provide a
 | │   └── dashboard.html | Power BI dashboard integration             |
 | ├── app.py           | Flask application file                       |
 | └── README.md        | This README file                             |
+## The project is incomplete so is the readme will surely update it bit by bit
